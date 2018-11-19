@@ -2,9 +2,9 @@ server {
     listen 3000;
     server_name $SERVER_NAME;
     location / {
-        proxy_set_header Host $HOST;
+        proxy_set_header Host $PROXY_HOST;
         proxy_set_header Origin $ORIGIN;
-        proxy_set_header Referer $REFERER;
+        proxy_set_header Referer $PROXY_REFERER;
         proxy_pass $PASS;
     }
 }

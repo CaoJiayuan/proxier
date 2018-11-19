@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 ENV SERVER_NAME=localhost \
-    HOST=localhost \
+    PROXY_HOST=localhost \
     TLS=false
 
 RUN apk add --no-cache gettext 
